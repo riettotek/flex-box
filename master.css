@@ -11,4 +11,7 @@ body{
     background-color: #254de4;
     color: #ffffff;
     margin:10px;
+    /* il float crea un buco */
+    float:left;
 }
+p{}
