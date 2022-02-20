@@ -9,13 +9,10 @@
 body{
     font-family : "Arial, Helvetica, sans-serif";
 }
-.flex-container{}
-    /*oppure creando delle pseudo elementi*/
-    .flex-container:after{
-        content: "";
-        clear:left;
-        display: block;
-    }
+.flex-container{
+    display:flex;
+    justify-content: center; /* Giocate con i vari valori per vedere come si comportano lgi elementi all'interno */
+}
 .item{
     height: 100px;
     width: 100px;
