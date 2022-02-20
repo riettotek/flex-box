@@ -1,0 +1,14 @@
+/*
+*    Master CSS
+*/
+body{
+    font-family : "Arial, Helvetica, sans-serif";
+}
+.flex-container{}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: #254de4;
+    color: #ffffff;
+    margin:10px;
+}
