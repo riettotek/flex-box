@@ -18,7 +18,14 @@ body{
     color: #ffffff;
     margin:20px;
     border: 15px solid #4E5C93;
-    justify-content: center; /* Giocate con i vari valori per vedere come si comportano lgi elementi all'interno */
+    /*
+    *    ATTENZIONE AL VERSO DELL'ASSE IMPOSTATO.
+    *    di Default è ROW
+    *    perché cambiano il verso delle regole sottostanti
+    */
+    justify-content: space-around;
+
+    align-items: end;/* Giocate con i vari valori per vedere come si comportano lgi elementi all'interno */
 }
 .item{
     height: 100px;
