@@ -13,12 +13,18 @@ body{
 }
 .flex-container{
     height: 500px;
-    display:flex;
     background-color: #a7a4a4;
     color: #ffffff;
     margin:20px;
     border: 15px solid #4E5C93;
-    justify-content: center; /* Giocate con i vari valori per vedere come si comportano lgi elementi all'interno */
+    display:flex;
+    /*
+    *    ATTENZIONE AL VERSO DELL'ASSE IMPOSTATO.
+    *    JUSTIFY   è sul VERSO          dell'ASSE
+    *    ALIGN     è PERPENDICOLARE     all'asse
+    */
+    justify-content: space-around;
+    align-items: end;
 }
 .item{
     height: 100px;
@@ -27,8 +33,7 @@ body{
     background-color: #4E5C93;
     color: #ffffff;
     margin:10px;
-    /* il float crea un buco */
-    float:left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 200px;
 }
-
-p{}
