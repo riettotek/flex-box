@@ -28,31 +28,37 @@ body{
     color: #ffffff;
     margin:10px;
     overflow: hidden;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    flex-basis: 450px;
 }
 /*
 *    ORDINAMENTO SEMPLICE
 */
+
+/*
+*    SHRINK
+*    quando si stringono hanno differente ratio
+*/
+
 .item:nth-child(1){
-    flex-grow: 1;
+    flex-shrink: 1;
 
     background: url("https://picsum.photos/1000?");
     background-size:cover;
 }
 
 .item:nth-child(2){
-    /*BASE di partenza dell'elemento*/
-    /*flex-basis: 300px;*/
-    /* GROW  ratio di proporzione ;  con questa impostazione si allargano fino al riempimento dell'elemento padre mantenendo le proporzioni stabilite fra loro (items) dal grow */
-    flex-grow: 2;
+    flex-shrink: 2;
 
     background: url("https://picsum.photos/1000");
     background-size:cover;
 }
 .item:nth-child(3){
-    flex-grow: 1;
+    flex-shrink: 3;
 
     background: url("https://picsum.photos/1000/?");
     background-size:cover;
