@@ -19,16 +19,50 @@ body{
     border: 15px solid #4E5C93;
     display:flex;
 
-    flex-wrap: wrap;
 }
 .item{
-    height: 100px;
-    width: 100px;
+    min-height: 200px;
+    min-width: 200px;
     border: 5px solid #eeeeee;
     background-color: #4E5C93;
     color: #ffffff;
     margin:10px;
+    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 200px;
+    justify-content: center;
+    align-items: center;
 }
+/*
+*    ORDINAMENTO SEMPLICE
+*/
+.item:nth-child(1){
+    order: 2;
+    background: url("https://picsum.photos/1000?");
+    background-size:cover;
+
+}
+
+.item:nth-child(2){
+    order:1;
+    background: url("https://picsum.photos/1000");
+    background-size:cover;
+}
+.item:nth-child(3){
+    order: 3;
+    background: url("https://picsum.photos/1000/?");
+    background-size:cover;
+}
+
+/*TESTO centrale*/
+/* .item:nth-child(1)>p{
+    text-transform: lowercase;
+    font-style: italic;
+    line-height: 1.6rem;
+    letter-spacing: .5px;
+    word-spacing: 3px;
+    font-size:20px;
+    background:#00000088;
+    height: 100%;
+    align-items: center;
+    display: flex;
+} */
