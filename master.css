@@ -18,13 +18,8 @@ body{
     margin:20px;
     border: 15px solid #4E5C93;
     display:flex;
-    /*
-    *    ATTENZIONE AL VERSO DELL'ASSE IMPOSTATO.
-    *    JUSTIFY   è sul VERSO          dell'ASSE
-    *    ALIGN     è PERPENDICOLARE     all'asse
-    */
-    justify-content: space-around;
-    align-items: end;
+
+    flex-wrap: wrap;
 }
 .item{
     height: 100px;
