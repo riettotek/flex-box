@@ -8,15 +8,23 @@
 }
 body{
     font-family : "Arial, Helvetica, sans-serif";
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .flex-container{
+    height: 500px;
     display:flex;
+    background-color: #a7a4a4;
+    color: #ffffff;
+    margin:20px;
+    border: 15px solid #4E5C93;
     justify-content: center; /* Giocate con i vari valori per vedere come si comportano lgi elementi all'interno */
 }
 .item{
     height: 100px;
     width: 100px;
-    background-color: #254de4;
+    border: 5px solid #eeeeee;
+    background-color: #4E5C93;
     color: #ffffff;
     margin:10px;
     /* il float crea un buco */
