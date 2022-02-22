@@ -74,11 +74,10 @@
     }
     .gwd-image-blbx {
       transform-origin: 50% 50% 0px;
-      width: 194px;
-      height: 58px;
       position: absolute;
-      bottom: 0px;
-      right: 0px;
+      inset: 167px 0px 0px 28px;
+      width: 272px;
+      height: 84.72px;
     }
     .gwd-div-7vsd {
       left: 0px;
@@ -106,12 +105,14 @@
       transform-origin: 50% 50% 0px;
       width: 100%;
     }
-    .gwd-div-u74u {
+    #header {
       height: 80px;
       position: absolute;
       width: 100%;
       left: 0px;
-      top: 0px;
+      top: -80px;
+      transform-style: preserve-3d;
+      transform: translate3d(0px, 0px, 0px);
     }
     .gwd-p-1scj {
       color: rgb(253, 249, 249);
@@ -138,9 +139,9 @@
       font-weight: normal;
       font-family: Arial;
       width: 249px;
-      top: 33px;
       letter-spacing: -0.2px;
       left: 50px;
+      top: 33px;
     }
     .gwd-div-h0gn {
       height: 250.222px;
@@ -155,7 +156,9 @@
       width: 182.667px;
       height: 58px;
       top: 69px;
-      left: 0px;
+      left: -207px;
+      transform: translate3d(-183px, 0px, 0px);
+      transform-style: preserve-3d;
     }
     .gwd-p-501v {
       position: absolute;
@@ -206,6 +209,47 @@
       left: 134px;
       top: 45px;
     }
+    .gwd-image-1xal {
+      position: absolute;
+      transform-origin: 50% 50% 0px;
+      left: 183px;
+      top: 93px;
+      width: 131px;
+      height: 168px;
+    }
+    #logo {
+      position: absolute;
+      width: 67px;
+      height: 41.53px;
+      left: 215px;
+      top: 201px;
+    }
+    @keyframes gwd-gen-s7ragwdanimation_gwd-keyframes {
+      0% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: ease-in-out;
+      }
+      100% {
+        transform: translate3d(0px, 80px, 0px);
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-s7ragwdanimation {
+      animation: 1s ease-in 0s 1 normal forwards running gwd-gen-s7ragwdanimation_gwd-keyframes;
+    }
+    @keyframes gwd-gen-1kkvgwdanimation_gwd-keyframes {
+      0% {
+        transform: translate3d(-183px, 0px, 0px);
+        animation-timing-function: ease-in-out;
+      }
+      100% {
+        transform: translate3d(0px, 0px, 0px);
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-1kkvgwdanimation {
+      animation: 1s linear 1s 1 normal forwards running gwd-gen-1kkvgwdanimation_gwd-keyframes;
+    }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
   <script data-source="gwd_webcomponents_v1_min.js" data-version="2" data-exports-type="gwd_webcomponents_v1" src="gwd_webcomponents_v1_min.js"></script>
@@ -223,19 +267,19 @@
       <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-page-s9oe" data-gwd-width="300px" data-gwd-height="250px">
         <div class="gwd-page-content gwd-page-size gwd-div-4jkh">
           <div class="gwd-div-h0gn" id="sfondo"></div>
-          <gwd-image id="Forma_bianca" source="assets/Forma bianca.svg" scaling="stretch" class="gwd-image-blbx"></gwd-image>
-          <div class="gwd-div-u74u" id="header">
+          <div class="gwd-div-u74u gwd-gen-s7ragwdanimation" id="header">
             <h2 class="gwd-p-1scj">SUPER FIBRA</h2>
             <p class="gwd-p-51js">Per Una Serata Perfetta</p>
           </div>
-          <div class="gwd-div-1n3l" id="prezzo">
+          <div class="gwd-div-1n3l gwd-gen-1kkvgwdanimation" id="prezzo">
             <p class="gwd-p-501v">Per i clienti windtre</p>
             <p class="gwd-p-mqzb">22</p>
             <p class="gwd-p-510d">,99€</p>
             <p class="gwd-p-5v7f">al <strong>mese</strong></p>
-
-
           </div>
+          <gwd-image id="fiorello" source="assets/fiorello.png" scaling="stretch" class="gwd-image-1xal"></gwd-image>
+          <gwd-image id="Forma_bianca" source="assets/Forma bianca.svg" scaling="stretch" class="gwd-image-blbx"></gwd-image>
+          <gwd-image id="logo" source="assets/Wind_Tre_logo_(2020).svg" scaling="stretch" class="gwd-image-whw2"></gwd-image>
           <div class="gwd-div-7vsd" data-gwd-guide="" data-gwd-tl-locked="" data-gwd-tl-hidden="">
             <gwd-image id="600x600_REFINE_W3_Fibra_Fiorello_17Gennaio_IMG" source="assets/600x600_REFINE_W3_Fibra_Fiorello_17Gennaio_IMG.jpg" scaling="stretch" class="gwd-image-i3fh" data-gwd-guide=""></gwd-image>
             <gwd-image id="guide_lines" source="assets/guide lines.png" scaling="stretch" class="gwd-image-1b9e" data-gwd-guide=""></gwd-image>
