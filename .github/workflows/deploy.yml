@@ -1,0 +1,21 @@
+name: Test Graficatek deploying
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v2
+      with:
+        host: ftp.graficatek.it
+        user: 12712995@aruba.it
+        password: ${{ secrets.ENABLEFTPSECRET }}
+        remoteDir: "www.graficatek.it"
